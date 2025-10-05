@@ -417,6 +417,13 @@ export default function App() {
             <ObjectDetails object={selectedObject} viewMode="history" />
           </div>
         )}
+
+        {/* Minimal UI to indicate the app is mounted correctly */}
+        <div style={{ fontFamily: 'system-ui, sans-serif', padding: 24 }}>
+          <h1>Astronomy Explorer</h1>
+          <p>Если вы видите этот текст, приложение успешно смонтировано.</p>
+          <div style={{ marginTop: 12, color: '#888' }}>Готово</div>
+        </div>
       </main>
 
       {showNASAGallery && selectedObject && (
